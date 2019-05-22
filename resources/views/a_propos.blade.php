@@ -6,7 +6,11 @@
 		<div class="gtco-container text-center">
 			<div class="display-t">
 				<div class="display-tc">
-					<h1>We have high quality services that you will surely love!</h1>
+					@if ($message != '')
+						<h1>{{ $message }}</h1>
+					@else
+						<h1>We have high quality services that you will surely love!</h1>
+					@endif
 				</div>	
 			</div>
 		</div>

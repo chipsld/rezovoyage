@@ -25,8 +25,7 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Admin RAZO VOYAGE</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="{{route('admin_voyages_create')}}">CREATE</a></li>
-         <li><a href="{{route('admin_voyages_list')}}">LIST</a></li>
+         <li><a href="{{route('admin_voyages')}}">LIST</a></li>
         <li><a href="{{route('admin_users')}}">USERS</a></li>
       </ul>
     </div>
@@ -42,6 +41,8 @@
 	@yield('admin_users')
 
 	@yield('admin_voyages')
+
+	@yield('form')
 
 	</div>
 
